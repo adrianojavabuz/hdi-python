@@ -1,0 +1,17 @@
+-- contato definition
+
+CREATE TABLE contato (
+	email TEXT,
+	telefone NUMERIC,
+	flag INTEGER NOT NULL,
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
+);
+
+-- usuario definition
+
+CREATE TABLE usuario (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nome TEXT,
+	documento NUMERIC,
+	contatos BLOB
+);
